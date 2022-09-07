@@ -5,9 +5,9 @@ Licensed under the CC BY-NC 4.0 license (https://creativecommons.org/licenses/by
 import torch
 import numpy as np
 from utils.utils import AverageMeter, ProgressMeter
-import self_optimal_transport
+from  self_optimal_transport import SOT
 
-sot = self_optimal_transport.SOT()
+sot = SOT()
 
 
 def simclr_train(train_loader, model, criterion, optimizer, epoch):
